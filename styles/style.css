@@ -4,16 +4,21 @@ body{
 .bottom-pict{
     width: 30%;
     min-width: 200px;
-    position:fixed;
     bottom:0;
     left:20px;
-    z-index: -1000;
 }
 .left-pict{
     width: 10%;
     min-width: 100px;
-    position: fixed;
     right:0;
     top: 50px;
+}
+.fixed-bg-pict{
     z-index: -1000;
+    opacity: 50%;
+    position: fixed;
+}
+.fixed-bg-pict:hover{
+    opacity:100%;
+    /* !Hover works but not when it is behind another element. Is there an easy fix? */
 }
